@@ -7,5 +7,6 @@
 - 数据准备与预处理。
 - cAE 模型的搭建与训练方法。
 - 生成并评估 BNS 波形的示例代码。
+- 基于 TensorFlow 的 CAE 生成雙中自習波形的伪代码（参见 cae_tensorflow_pseudocode.md）。
 
 欢迎根据需要扩展本仓库并贡献改进。
