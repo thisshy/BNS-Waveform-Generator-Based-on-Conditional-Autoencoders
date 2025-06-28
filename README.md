@@ -1,4 +1,4 @@
-# AI_Waveform
+# BNS Waveform Generator
 
 This repository provides the source code for the paper:
 
@@ -14,10 +14,10 @@ The figure below illustrates the architecture of the proposed Conditional Autoen
 
 *Figure: Architecture of the cAE model used for training and inference. The training stage includes both waveform autoencoding and latent supervision via physical parameters. At test time, only the condition encoder and decoder are used to generate waveforms from parameter input.*
 
-
+---
 ## 🔧 Repository Structure
 
-```text
+```bash
 AI_Waveform/
 │
 ├── /data/                  # Waveform generation and preprocessing scripts
@@ -25,6 +25,7 @@ AI_Waveform/
 ├── /training/              # Training scripts and optimizer setup
 ├── /evaluation/            # Evaluation: mismatch, waveform overlap, timing tests
 ├── /examples/              # Sample usage: single and batch inference
-├── cae_tensorflow_pseudocode.md
 ├── README.md
 └── requirements.txt        # Environment dependencies
+```
+
