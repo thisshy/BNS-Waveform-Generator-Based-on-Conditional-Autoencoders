@@ -14,7 +14,6 @@ The figure below illustrates the architecture of the proposed Conditional Autoen
 
 *Figure: Architecture of the cAE model used for training and inference. The training stage includes both waveform autoencoding and latent supervision via physical parameters. At test time, only the condition encoder and decoder are used to generate waveforms from parameter input.*
 
----
 
 ## 🔧 Repository Structure
 
