@@ -6,6 +6,7 @@ This repository provides the source code for the paper:
 
 The project introduces a Conditional Autoencoder (cAE) for efficient and accurate generation of gravitational waveforms from Binary Neutron Star (BNS) mergers. It supports waveform reconstruction conditioned on physical parameters such as component masses, spins, and tidal deformabilities, and achieves high precision while maintaining strong generation efficiency.
 
+![说明文字](total_network.png)
 ---
 
 ## 🔧 Repository Structure
