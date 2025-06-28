@@ -1,12 +1,23 @@
 # AI_Waveform
 
-该仓库介绍了如何利用卷积自编码器（cAE）模型生成双中子星（binary neutron star，BNS）引力波波形。项目旨在通过深度学习方法对BNS合并过程中的波形进行建模和预测，为相关科学研究提供便捷的模拟工具。
+This repository provides the source code for the paper:
 
-主要内容包括：
+**"Conditional Autoencoder for Generating Binary Neutron Star Waveforms with Tidal and Precession Effects"**
 
-- 数据准备与预处理。
-- cAE 模型的搭建与训练方法。
-- 生成并评估 BNS 波形的示例代码。
-- 基于 TensorFlow 的 CAE 生成雙中自習波形的伪代码（参见 cae_tensorflow_pseudocode.md）。
+The project introduces a Conditional Autoencoder (cAE) for efficient and accurate generation of gravitational waveforms from Binary Neutron Star (BNS) mergers. It supports waveform reconstruction conditioned on physical parameters such as component masses, spins, and tidal deformabilities, and achieves high precision while maintaining strong generation efficiency.
 
-欢迎根据需要扩展本仓库并贡献改进。
+---
+
+## 🔧 Repository Structure
+
+```text
+AI_Waveform/
+│
+├── /data/                  # Waveform generation and preprocessing scripts
+├── /models/                # Model architecture: encoder1, encoder2, decoder
+├── /training/              # Training scripts and optimizer setup
+├── /evaluation/            # Evaluation: mismatch, waveform overlap, timing tests
+├── /examples/              # Sample usage: single and batch inference
+├── cae_tensorflow_pseudocode.md
+├── README.md
+└── requirements.txt        # Environment dependencies
