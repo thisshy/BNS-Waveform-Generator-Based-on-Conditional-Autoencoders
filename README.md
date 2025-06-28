@@ -1,4 +1,4 @@
-# BNS Waveform Generator
+# BNS Waveform Generator Based on Conditional Autoencoders
 
 This repository provides the source code for the paper:
 
