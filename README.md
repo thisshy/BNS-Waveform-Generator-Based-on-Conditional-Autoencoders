@@ -7,11 +7,11 @@ This repository provides the source code for the paper:
 The project introduces a Conditional Autoencoder (cAE) for efficient and accurate generation of gravitational waveforms from Binary Neutron Star (BNS) mergers. It supports waveform reconstruction conditioned on physical parameters such as component masses, spins, and tidal deformabilities, and achieves high precision while maintaining strong generation efficiency.
 
 
-## 🛠️ Environment Setup
+##  Environment Setup
 
 This project is developed based on **Python 3.10** and **TensorFlow 2.15**. To ensure compatibility, we recommend setting up a dedicated virtual environment.
 
-### ✅ Required Dependencies
+###  Required Dependencies
 
 The key dependencies include:
 
@@ -26,7 +26,7 @@ The key dependencies include:
 
 All required packages are listed in `requirements.txt`.
 
-### 🚀 Installation Instructions
+###  Installation Instructions
 
 You can install the environment using the following steps:
 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 
 
-## 🧠 Model Architecture
+## Model Architecture
 
 The figure below illustrates the architecture of the proposed Conditional Autoencoder (cAE) model for gravitational waveform generation. The model consists of three main components: (1) the autoencoder for waveform reconstruction, (2) the conditional encoder that maps physical parameters (e.g., masses, spins, tidal deformabilities) to latent space, and (3) the shared decoder used during inference to generate waveforms from encoded conditions. The encoder and decoder modules integrate convolutional layers, ResNet blocks, and Transformer blocks for temporal feature extraction and reconstruction.
 
@@ -53,14 +53,14 @@ The figure below illustrates the architecture of the proposed Conditional Autoen
 
 This repository provides scripts to reproduce both the Conditional Autoencoder (cAE) and the Residual-MLP-CNN baseline models described in the paper. All training code is located in the `/models/` directory, and preprocessed datasets are expected under `/data/`.
 
-### 🔹 Training Scripts
+###  Training Scripts
 
 - `cAE_amplitude.py`: trains the conditional autoencoder model for waveform amplitude reconstruction.
 - `cAE_phase.py`: trains the conditional autoencoder model for waveform phase reconstruction.
 - `res_mlp_cnn_amplitude.py`: trains the Residual-MLP-CNN baseline for amplitude.
 - `res_mlp_cnn_phase.py`: trains the Residual-MLP-CNN baseline for phase.
 
-### 🚀 How to Train
+###  How to Train
 
 To train the models, run the scripts as follows:
 
@@ -74,7 +74,7 @@ python models/res_mlp_cnn_amplitude.py
 python models/res_mlp_cnn_phase.py
 ```
 
-## 📊 Inference, Evaluation, and Analysis
+##  Inference, Evaluation, and Analysis
 
 Once the models in the `/models/` directory have been successfully trained, you can generate waveforms directly using:
 
@@ -101,7 +101,7 @@ Other scripts in this directory are provided for reproducing the key evaluation 
 
 
 ---
-## 🔧 Repository Structure
+##  Repository Structure
 
 ```bash
 BNS Waveform Generator Based on Conditional Autoencoders/
