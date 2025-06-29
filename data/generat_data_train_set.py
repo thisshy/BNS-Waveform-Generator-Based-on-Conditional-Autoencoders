@@ -20,7 +20,6 @@ solar_mass = 1.98847e30
 
 
 
-# 你原来的超参
 num_samples = int(1e6)
 fs  = 4096
 times = 2  #s
