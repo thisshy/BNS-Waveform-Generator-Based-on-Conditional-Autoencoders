@@ -20,7 +20,7 @@ solar_mass = 1.98847e30
 
 
 
-num_samples = int(1e6)
+num_samples = int(1e5)
 fs  = 4096
 times = 2  #s
 f_lower=50
