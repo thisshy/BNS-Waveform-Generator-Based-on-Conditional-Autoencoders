@@ -29,7 +29,7 @@ def cal_hphc_from_amp_ph(amplitude, phase):
     hc = amplitude * np.sin(phase)
     return hp, hc
 
-def cal_overlap_freq(h1, h2, dt=1.0, psd=1.0, fmin=None, fmax=None, eps=1e-30):
+def cal_overlap_freq(h1, h2, dt=1.0, psd="o4", fmin=None, fmax=None, eps=1e-30):
     def _build_psd_on_grid(fgrid, psd_spec, eps_):
         if psd_spec is None or (np.isscalar(psd_spec) and float(psd_spec) == 1.0):
             Sn = np.ones_like(fgrid, dtype=float)
